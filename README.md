@@ -4,9 +4,7 @@
 
 <p align="left"> <img src="https://komarev.com/ghpvc/?username=abirpanda&label=Profile%20views&color=0e75b6&style=flat" alt="abirpanda" /> </p>
 
-<div align="center" >
-<img hight="80" width="800" alt="GIF" align="center" src="https://i.pinimg.com/originals/e0/45/36/e045368c020f0b25b8133da99ac57657.gif">
-</div>
+
 
 
 
