@@ -1,9 +1,14 @@
-<h1 align="center">Hi 👋, I'm Abir Panda</h1>
+<h1 align="center">Hi <img src="https://user-images.githubusercontent.com/18350557/176309783-0785949b-9127-417c-8b55-ab5a4333674e.gif" alt="waving hand" height="36" />, I'm Abir Panda</h1>
 <h3 align="center">A passionate WEB developer from India</h3>
+
 
 <p align="left"> <img src="https://komarev.com/ghpvc/?username=abirpanda&label=Profile%20views&color=0e75b6&style=flat" alt="abirpanda" /> </p>
 
-<p align="left"> <a href="https://github.com/ryo-ma/github-profile-trophy"><img src="https://github-profile-trophy.vercel.app/?username=abirpanda" alt="abirpanda" /></a> </p>
+<div align="center" >
+<img hight="80" width="800" alt="GIF" align="center" src="https://i.pinimg.com/originals/e0/45/36/e045368c020f0b25b8133da99ac57657.gif">
+</div>
+
+
 
 - 🔭 I’m currently working on [blem](https://github.com/AbirpandA/blem.git)
 
@@ -26,4 +31,10 @@
 
 <p>&nbsp;<img align="center" src="https://github-readme-stats.vercel.app/api?username=abirpanda&show_icons=true&locale=en" alt="abirpanda" /></p>
 
-<p><img align="center" src="https://github-readme-streak-stats.herokuapp.com/?user=abirpanda&" alt="abirpanda" /></p>
+<p align="center"><img align="center" src="https://github-readme-streak-stats.herokuapp.com/?user=abirpanda&" alt="abirpanda" /></p>
+
+<div align="center"> <a href="https://github.com/ryo-ma/github-profile-trophy"><img src="https://github-profile-trophy.vercel.app/?username=abirpanda" alt="abirpanda" /></a> </div>
+
+<div align="center">
+<img height="100%" src="https://raw.githubusercontent.com/Sasuke1003/photoshub/refs/heads/main/Pixel%20Art%208Bit%20GIF%20by%20pixel%20jeff.gif" />
+</div>
