@@ -164,7 +164,7 @@ const labelRow = (label, value, labelWidth = 18) => {
 // Helper: Create section header
 const sectionHeader = (emoji, title) => {
   const headerText = `─ ${emoji} ${title} `;
-  return `┌${headerText}${"─".repeat(CONTENT_WIDTH - headerText.length )}┐`;
+  return `┌${headerText}${"─".repeat(CONTENT_WIDTH - headerText.length)}┐`;
 };
 
 // Helper: Create section footer
@@ -220,15 +220,20 @@ ${sectionFooter()}
  */
 function generateTechSection(techStack) {
   const formatArray = (arr) => arr.join(" • ");
+  const techRow = (label, value) =>
+    labelRow(label + ":", formatArray(value), 18);
 
   return `
 ${sectionHeader("🛠️ ", "TECH ARSENAL")}
 ${createRow("")}
-${labelRow("Languages:", formatArray(techStack.languages))}
-${labelRow("Frontend:", formatArray(techStack.frontend))}
-${labelRow("Backend:", formatArray(techStack.backend))}
-${labelRow("Databases:", formatArray(techStack.databases))}
-${labelRow("Tools:", formatArray(techStack.tools))}
+${techRow("Languages", techStack.languages)}
+${techRow("Frontend", techStack.frontend)}
+${techRow("Backend", techStack.backend)}
+${techRow("Databases", techStack.databases)}
+${techRow("DevOps", techStack.devops)}
+${techRow("Cloud Platforms", techStack.cloud)}
+${techRow("Testing", techStack.testing)}
+${techRow("Tools", techStack.tools)}
 ${createRow("")}
 ${sectionFooter()}
 `;
@@ -271,43 +276,6 @@ ${statRow("Medium:", lc.medium || 0)}
 ${statRow("Hard:", lc.hard || 0)}
 ${statRow("Acceptance Rate:", (lc.acceptance_rate || 0).toFixed(2) + "%")}
 ${createRow(`  ╰─ Last Updated: ${date}`)}
-${createRow("")}
-${sectionFooter()}
-`;
-}
-
-/**
- * Generate mission section
- */
-function generateMissionSection(mission) {
-  const m = mission || {
-    status: "Unknown",
-    mode: "Learning",
-    weapons: [],
-    weaknesses: [],
-    next_level: "Keep improving",
-  };
-
-  const weaponRows = (m.weapons || [])
-    .map((w) => createRow(`    ⚡ ${w}`))
-    .join("\n");
-  const weaknessRows = (m.weaknesses || [])
-    .map((w) => createRow(`    ⚠️  ${w}`))
-    .join("\n");
-
-  return `
-${sectionHeader("🚀", "CURRENT MISSION STATUS")}
-${createRow("")}
-${labelRow("Status:", m.status || "")}
-${labelRow("Mode:", m.mode || "")}
-${createRow("")}
-${createRow("  Weapons Arsenal:")}
-${weaponRows}
-${createRow("")}
-${createRow("  Known Weaknesses:")}
-${weaknessRows}
-${createRow("")}
-${labelRow("Next Level:", m.next_level || "")}
 ${createRow("")}
 ${sectionFooter()}
 `;
@@ -368,7 +336,6 @@ function generateSocialSection(social) {
   return `
 ${sectionHeader("📞", "CONNECT & COLLABORATE")}
 ${createRow("")}
-${labelRow("GitHub:", s.github || "N/A")}
 ${labelRow("LinkedIn:", s.linkedin || "N/A")}
 ${labelRow("Twitter:", s.twitter || "N/A")}
 ${labelRow("Email:", s.email || "N/A")}
@@ -399,21 +366,12 @@ ${doubleFooter()}
 /**
  * Main README generator
  */
-function generateREADME(
-  profile,
-  techStack,
-  mission,
-  projects,
-  goals,
-  social,
-  stats,
-) {
+function generateREADME(profile, techStack, projects, goals, social, stats) {
   let readme = "```yml\n";
   readme += generateMatrixHeader();
   readme += generateProfileSection(profile);
   readme += generateTechSection(techStack);
   readme += generateStatsSection(stats.github, stats.leetcode, profile);
-  readme += generateMissionSection(mission);
   readme += generateProjectsSection(projects);
   readme += generateGoalsSection(goals);
   readme += generateSocialSection(social);
@@ -492,7 +450,6 @@ async function main() {
       const newREADME = generateREADME(
         profileData.profile,
         profileData.tech_stack,
-        profileData.current_mission,
         profileData.current_projects,
         profileData.goals,
         profileData.social,
