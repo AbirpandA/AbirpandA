@@ -45,11 +45,11 @@ github_stats:
   last_updated: '2026-01-24'
 leetcode_stats:
   username: abirpanda
-  total_solved: 144
+  total_solved: 145
   easy: 63
-  medium: 74
+  medium: 75
   hard: 7
-  acceptance_rate: 73.67
+  acceptance_rate: 73.54
   badge: Intermediate
   last_updated: '2026-01-24'
 current_mission:

@@ -147,23 +147,51 @@ async function fetchContributions() {
 // 📝 README GENERATOR
 // ═══════════════════════════════════════════════════════════════════
 
+// Global constants for consistent box formatting
+const CONTENT_WIDTH = 73;
+
+// Helper: Create a row with consistent padding
+const createRow = (content = "") => {
+  return `│${content.padEnd(CONTENT_WIDTH)}│`;
+};
+
+// Helper: Create a labeled row (label: value)
+const labelRow = (label, value, labelWidth = 18) => {
+  const content = `  ${label.padEnd(labelWidth)}${String(value)}`;
+  return createRow(content);
+};
+
+// Helper: Create section header
+const sectionHeader = (emoji, title) => {
+  const headerText = `─ ${emoji} ${title} `;
+  return `┌${headerText}${"─".repeat(CONTENT_WIDTH - headerText.length )}┐`;
+};
+
+// Helper: Create section footer
+const sectionFooter = () => `└${"─".repeat(CONTENT_WIDTH)}┘`;
+
+// Helper: Create double-line header (for main header/footer)
+const doubleHeader = () => `╔${"═".repeat(CONTENT_WIDTH)}╗`;
+const doubleFooter = () => `╚${"═".repeat(CONTENT_WIDTH)}╝`;
+const doubleRow = (content = "") => `║${content.padEnd(CONTENT_WIDTH)}║`;
+
 /**
  * Generate matrix-style terminal ASCII art
  */
 function generateMatrixHeader() {
   return `
-╔═══════════════════════════════════════════════════════════════════════════╗
-║                                                                           ║
-║  ██╗    ██╗███████╗██╗      ██████╗ ██████╗ ███╗   ███╗███████╗███████╗ ║
-║  ██║    ██║██╔════╝██║     ██╔════╝██╔═══██╗████╗ ████║██╔════╝██╔════╝ ║
-║  ██║ █╗ ██║█████╗  ██║     ██║     ██║   ██║██╔████╔██║█████╗  █████╗   ║
-║  ██║███╗██║██╔══╝  ██║     ██║     ██║   ██║██║╚██╔╝██║██╔══╝  ██╔══╝   ║
-║  ╚███╔███╔╝███████╗███████╗╚██████╗╚██████╔╝██║ ╚═╝ ██║███████╗███████╗ ║
-║   ╚══╝╚══╝ ╚══════╝╚══════╝ ╚═════╝ ╚═════╝ ╚═╝     ╚═╝╚══════╝╚══════╝ ║
-║                                                                           ║
-║                    Welcome to Abir Panda's GitHub Matrix                 ║
-║                                                                           ║
-╚═══════════════════════════════════════════════════════════════════════════╝
+${doubleHeader()}
+${doubleRow("")}
+${doubleRow("  ██╗    ██╗███████╗██╗      ██████╗ ██████╗ ███╗   ███╗███████╗███████╗")}
+${doubleRow("  ██║    ██║██╔════╝██║     ██╔════╝██╔═══██╗████╗ ████║██╔════╝██╔════╝")}
+${doubleRow("  ██║ █╗ ██║█████╗  ██║     ██║     ██║   ██║██╔████╔██║█████╗  █████╗")}
+${doubleRow("  ██║███╗██║██╔══╝  ██║     ██║     ██║   ██║██║╚██╔╝██║██╔══╝  ██╔══╝")}
+${doubleRow("  ╚███╔███╔╝███████╗███████╗╚██████╗╚██████╔╝██║ ╚═╝ ██║███████╗███████╗")}
+${doubleRow("   ╚══╝╚══╝ ╚══════╝╚══════╝ ╚═════╝ ╚═════╝ ╚═╝     ╚═╝╚══════╝╚══════╝")}
+${doubleRow("")}
+${doubleRow("                    Welcome to Abir Panda's GitHub Matrix")}
+${doubleRow("")}
+${doubleFooter()}
 `;
 }
 
@@ -172,18 +200,18 @@ function generateMatrixHeader() {
  */
 function generateProfileSection(profile) {
   return `
-┌─ 👤 PROFILE MATRIX ─────────────────────────────────────────────────────┐
-│                                                                           │
-│  Name:              ${profile.name.padEnd(50)}  │
-│  Title:             ${profile.title.padEnd(50)}  │
-│  Location:          ${profile.location.padEnd(50)}  │
-│  Age:               ${profile.age.toString().padEnd(50)}  │
-│  Timezone:          ${profile.timezone.padEnd(50)}  │
-│  Status:            🟢 Online 24/7                                       │
-│                                                                           │
-│  Tagline: "${profile.tagline}"                        │
-│                                                                           │
-└───────────────────────────────────────────────────────────────────────────┘
+${sectionHeader("👤", "PROFILE MATRIX")}
+${createRow("")}
+${labelRow("Name:", profile.name)}
+${labelRow("Title:", profile.title)}
+${labelRow("Location:", profile.location)}
+${labelRow("Age:", profile.age)}
+${labelRow("Timezone:", profile.timezone)}
+${labelRow("Status:", "🟢 Online 24/7")}
+${createRow("")}
+${createRow(`  Tagline: "${profile.tagline}"`)}
+${createRow("")}
+${sectionFooter()}
 `;
 }
 
@@ -194,15 +222,15 @@ function generateTechSection(techStack) {
   const formatArray = (arr) => arr.join(" • ");
 
   return `
-┌─ 🛠️  TECH ARSENAL ────────────────────────────────────────────────────────┐
-│                                                                           │
-│  Languages:        ${formatArray(techStack.languages).padEnd(50)}  │
-│  Frontend:         ${formatArray(techStack.frontend).slice(0, 47).padEnd(50)}  │
-│  Backend:          ${formatArray(techStack.backend).padEnd(50)}  │
-│  Databases:        ${formatArray(techStack.databases).padEnd(50)}  │
-│  Tools:            ${formatArray(techStack.tools).slice(0, 47).padEnd(50)}  │
-│                                                                           │
-└───────────────────────────────────────────────────────────────────────────┘
+${sectionHeader("🛠️ ", "TECH ARSENAL")}
+${createRow("")}
+${labelRow("Languages:", formatArray(techStack.languages))}
+${labelRow("Frontend:", formatArray(techStack.frontend))}
+${labelRow("Backend:", formatArray(techStack.backend))}
+${labelRow("Databases:", formatArray(techStack.databases))}
+${labelRow("Tools:", formatArray(techStack.tools))}
+${createRow("")}
+${sectionFooter()}
 `;
 }
 
@@ -210,40 +238,41 @@ function generateTechSection(techStack) {
  * Generate live stats section
  */
 function generateStatsSection(github, leetcode, profile) {
-  // Provide defaults if stats are undefined
-  const githubStats = github || { followers: 0, following: 0, public_repos: 0 };
-  const leetcodeStats = leetcode || {
+  const gh = github || { followers: 0, following: 0, public_repos: 0 };
+  const lc = leetcode || {
     total_solved: 0,
     easy: 0,
     medium: 0,
     hard: 0,
     acceptance_rate: 0,
   };
-  const contributions =
-    (profile &&
-      profile.github_stats &&
-      profile.github_stats.total_contributions) ||
-    0;
+  const contributions = profile?.github_stats?.total_contributions || 0;
+  const date = new Date().toISOString().split("T")[0];
+
+  const statRow = (label, value) => {
+    const content = `  │  ${label.padEnd(18)}${String(value)}`;
+    return createRow(content);
+  };
 
   return `
-┌─ 📊 LIVE METRICS (Updated Daily) ────────────────────────────────────────┐
-│                                                                           │
-│  ╭─ GITHUB STATS                                                         │
-│  │  Followers:        ${(githubStats.followers || 0).toString().padEnd(46)}│
-│  │  Following:        ${(githubStats.following || 0).toString().padEnd(46)}│
-│  │  Repositories:     ${(githubStats.public_repos || 0).toString().padEnd(46)}│
-│  │  Contributions:    ${contributions.toString().padEnd(46)}│
-│  ╰─ Last Updated: ${new Date().toISOString().split("T")[0].padEnd(34)}│
-│                                                                           │
-│  ╭─ LEETCODE STATS                                                       │
-│  │  Total Solved:     ${(leetcodeStats.total_solved || 0).toString().padEnd(46)}│
-│  │  Easy:             ${(leetcodeStats.easy || 0).toString().padEnd(46)}│
-│  │  Medium:           ${(leetcodeStats.medium || 0).toString().padEnd(46)}│
-│  │  Hard:             ${(leetcodeStats.hard || 0).toString().padEnd(46)}│
-│  │  Acceptance Rate:  ${(leetcodeStats.acceptance_rate || 0).toFixed(2) + "%".padEnd(44)}│
-│  ╰─ Last Updated: ${new Date().toISOString().split("T")[0].padEnd(34)}│
-│                                                                           │
-└───────────────────────────────────────────────────────────────────────────┘
+${sectionHeader("📊", "LIVE METRICS (Updated Daily)")}
+${createRow("")}
+${createRow("  ╭─ GITHUB STATS")}
+${statRow("Followers:", gh.followers || 0)}
+${statRow("Following:", gh.following || 0)}
+${statRow("Repositories:", gh.public_repos || 0)}
+${statRow("Contributions:", contributions)}
+${createRow(`  ╰─ Last Updated: ${date}`)}
+${createRow("")}
+${createRow("  ╭─ LEETCODE STATS")}
+${statRow("Total Solved:", lc.total_solved || 0)}
+${statRow("Easy:", lc.easy || 0)}
+${statRow("Medium:", lc.medium || 0)}
+${statRow("Hard:", lc.hard || 0)}
+${statRow("Acceptance Rate:", (lc.acceptance_rate || 0).toFixed(2) + "%")}
+${createRow(`  ╰─ Last Updated: ${date}`)}
+${createRow("")}
+${sectionFooter()}
 `;
 }
 
@@ -251,30 +280,36 @@ function generateStatsSection(github, leetcode, profile) {
  * Generate mission section
  */
 function generateMissionSection(mission) {
-  // Provide defaults if mission is undefined
-  const missionData = mission || {
+  const m = mission || {
     status: "Unknown",
     mode: "Learning",
-    weapons: ["Building"],
-    weaknesses: ["Time management"],
+    weapons: [],
+    weaknesses: [],
     next_level: "Keep improving",
   };
 
+  const weaponRows = (m.weapons || [])
+    .map((w) => createRow(`    ⚡ ${w}`))
+    .join("\n");
+  const weaknessRows = (m.weaknesses || [])
+    .map((w) => createRow(`    ⚠️  ${w}`))
+    .join("\n");
+
   return `
-┌─ 🚀 CURRENT MISSION STATUS ─────────────────────────────────────────────┐
-│                                                                           │
-│  Status:            ${(missionData.status || "").padEnd(50)}  │
-│  Mode:              ${(missionData.mode || "").padEnd(50)}  │
-│                                                                           │
-│  Weapons Arsenal:                                                        │
-${(missionData.weapons || []).map((w) => `│    ⚡ ${(w || "").padEnd(63)}  │`).join("\n")}
-│                                                                           │
-│  Known Weaknesses:                                                       │
-${(missionData.weaknesses || []).map((w) => `│    ⚠️  ${(w || "").padEnd(63)}  │`).join("\n")}
-│                                                                           │
-│  Next Level:        ${(missionData.next_level || "").padEnd(50)}  │
-│                                                                           │
-└───────────────────────────────────────────────────────────────────────────┘
+${sectionHeader("🚀", "CURRENT MISSION STATUS")}
+${createRow("")}
+${labelRow("Status:", m.status || "")}
+${labelRow("Mode:", m.mode || "")}
+${createRow("")}
+${createRow("  Weapons Arsenal:")}
+${weaponRows}
+${createRow("")}
+${createRow("  Known Weaknesses:")}
+${weaknessRows}
+${createRow("")}
+${labelRow("Next Level:", m.next_level || "")}
+${createRow("")}
+${sectionFooter()}
 `;
 }
 
@@ -282,37 +317,45 @@ ${(missionData.weaknesses || []).map((w) => `│    ⚠️  ${(w || "").padEnd(6
  * Generate projects section
  */
 function generateProjectsSection(projects) {
-  let section = `
-┌─ 📁 CURRENT PROJECTS ───────────────────────────────────────────────────┐
-│                                                                           │
-`;
+  let rows = [];
 
   Object.values(projects).forEach((proj, idx) => {
-    section += `│  ${idx + 1}. ${proj.name.padEnd(67)}  │\n`;
-    section += `│     Description: ${proj.description.slice(0, 55).padEnd(57)}  │\n`;
-    section += `│     Tech Stack:  ${proj.tech.join(" • ").slice(0, 50).padEnd(57)}  │\n`;
-    section += `│     Status:      ${proj.status.padEnd(57)}  │\n`;
-    section += `│                                                                           │\n`;
+    rows.push(createRow(`  ${idx + 1}. ${proj.name}`));
+    rows.push(createRow(`     Description: ${proj.description}`));
+    rows.push(createRow(`     Tech Stack:  ${proj.tech.join(" • ")}`));
+    rows.push(createRow(`     Status:      ${proj.status}`));
+    rows.push(createRow(""));
   });
 
-  section += `└───────────────────────────────────────────────────────────────────────────┘\n`;
-  return section;
+  return `
+${sectionHeader("📁", "CURRENT PROJECTS")}
+${createRow("")}
+${rows.join("\n")}
+${sectionFooter()}
+`;
 }
 
 /**
  * Generate goals section
  */
 function generateGoalsSection(goals) {
+  const shortTermRows = goals.short_term
+    .map((g) => createRow(`    ✓ ${g}`))
+    .join("\n");
+  const longTermRows = goals.long_term
+    .map((g) => createRow(`    ★ ${g}`))
+    .join("\n");
+
   return `
-┌─ 🎯 GOALS & ASPIRATIONS ────────────────────────────────────────────────┐
-│                                                                           │
-│  Short Term:                                                             │
-${goals.short_term.map((g) => `│    ✓ ${g.padEnd(65)}  │`).join("\n")}
-│                                                                           │
-│  Long Term:                                                              │
-${goals.long_term.map((g) => `│    ★ ${g.padEnd(65)}  │`).join("\n")}
-│                                                                           │
-└───────────────────────────────────────────────────────────────────────────┘
+${sectionHeader("🎯", "GOALS & ASPIRATIONS")}
+${createRow("")}
+${createRow("  Short Term:")}
+${shortTermRows}
+${createRow("")}
+${createRow("  Long Term:")}
+${longTermRows}
+${createRow("")}
+${sectionFooter()}
 `;
 }
 
@@ -320,21 +363,20 @@ ${goals.long_term.map((g) => `│    ★ ${g.padEnd(65)}  │`).join("\n")}
  * Generate social links section
  */
 function generateSocialSection(social) {
-  // Provide defaults if social links are missing
-  const socialData = social || {};
+  const s = social || {};
 
   return `
-┌─ 📞 CONNECT & COLLABORATE ──────────────────────────────────────────────┐
-│                                                                           │
-│  GitHub:           ${(socialData.github || "N/A").padEnd(50)}  │
-│  LinkedIn:         ${(socialData.linkedin || "N/A").padEnd(50)}  │
-│  Twitter:          ${(socialData.twitter || "N/A").padEnd(50)}  │
-│  Email:            ${(socialData.email || "N/A").padEnd(50)}  │
-│  Portfolio:        ${(socialData.portfolio || "N/A").padEnd(50)}  │
-│                                                                           │
-│  Let's collaborate on building scalable systems! 🚀                      │
-│                                                                           │
-└───────────────────────────────────────────────────────────────────────────┘
+${sectionHeader("📞", "CONNECT & COLLABORATE")}
+${createRow("")}
+${labelRow("GitHub:", s.github || "N/A")}
+${labelRow("LinkedIn:", s.linkedin || "N/A")}
+${labelRow("Twitter:", s.twitter || "N/A")}
+${labelRow("Email:", s.email || "N/A")}
+${labelRow("Portfolio:", s.portfolio || "N/A")}
+${createRow("")}
+${createRow("  Let's collaborate on building scalable systems! 🚀")}
+${createRow("")}
+${sectionFooter()}
 `;
 }
 
@@ -343,13 +385,14 @@ function generateSocialSection(social) {
  */
 function generateFooter() {
   const now = new Date().toISOString();
+
   return `
-╔═══════════════════════════════════════════════════════════════════════════╗
-║  Last Updated: ${now}                              ║
-║  Auto-updated daily via GitHub Actions • View source at /data/profile.yaml ║
-║                                                                           ║
-║  "Code today, scale tomorrow" - Abir Panda                              ║
-╚═══════════════════════════════════════════════════════════════════════════╝
+${doubleHeader()}
+${doubleRow(`  Last Updated: ${now}`)}
+${doubleRow("  Auto-updated daily via GitHub Actions •")}
+${doubleRow("")}
+${doubleRow('  "Code today, scale tomorrow" - Abir Panda')}
+${doubleFooter()}
 `;
 }
 
@@ -365,7 +408,8 @@ function generateREADME(
   social,
   stats,
 ) {
-  let readme = generateMatrixHeader();
+  let readme = "```yml\n";
+  readme += generateMatrixHeader();
   readme += generateProfileSection(profile);
   readme += generateTechSection(techStack);
   readme += generateStatsSection(stats.github, stats.leetcode, profile);
@@ -374,6 +418,7 @@ function generateREADME(
   readme += generateGoalsSection(goals);
   readme += generateSocialSection(social);
   readme += generateFooter();
+  readme += "\n```";
 
   return readme;
 }
