@@ -1,38 +1,127 @@
-<h1 align="center">Hi <img src="https://user-images.githubusercontent.com/18350557/176309783-0785949b-9127-417c-8b55-ab5a4333674e.gif" alt="waving hand" height="36" />, I'm Abir Panda</h1>
-<h3 align="center">A passionate WEB developer from India</h3>
 
+╔═══════════════════════════════════════════════════════════════════════════╗
+║                                                                           ║
+║  ██╗    ██╗███████╗██╗      ██████╗ ██████╗ ███╗   ███╗███████╗███████╗ ║
+║  ██║    ██║██╔════╝██║     ██╔════╝██╔═══██╗████╗ ████║██╔════╝██╔════╝ ║
+║  ██║ █╗ ██║█████╗  ██║     ██║     ██║   ██║██╔████╔██║█████╗  █████╗   ║
+║  ██║███╗██║██╔══╝  ██║     ██║     ██║   ██║██║╚██╔╝██║██╔══╝  ██╔══╝   ║
+║  ╚███╔███╔╝███████╗███████╗╚██████╗╚██████╔╝██║ ╚═╝ ██║███████╗███████╗ ║
+║   ╚══╝╚══╝ ╚══════╝╚══════╝ ╚═════╝ ╚═════╝ ╚═╝     ╚═╝╚══════╝╚══════╝ ║
+║                                                                           ║
+║                    Welcome to Abir Panda's GitHub Matrix                 ║
+║                                                                           ║
+╚═══════════════════════════════════════════════════════════════════════════╝
 
-<p align="left"> <img src="https://komarev.com/ghpvc/?username=abirpanda&label=Profile%20views&color=0e75b6&style=flat" alt="abirpanda" /> </p>
+┌─ 👤 PROFILE MATRIX ─────────────────────────────────────────────────────┐
+│                                                                           │
+│  Name:              Abir Panda                                          │
+│  Title:             Web Developer & System Designer                     │
+│  Location:          India                                               │
+│  Age:               19                                                  │
+│  Timezone:          IST (UTC+5:30)                                      │
+│  Status:            🟢 Online 24/7                                       │
+│                                                                           │
+│  Tagline: "Building scalable systems with resilience"                        │
+│                                                                           │
+└───────────────────────────────────────────────────────────────────────────┘
 
+┌─ 🛠️  TECH ARSENAL ────────────────────────────────────────────────────────┐
+│                                                                           │
+│  Languages:        JavaScript • Python • TypeScript • SQL              │
+│  Frontend:         React • Next.js • Tailwind CSS • HTML/CSS           │
+│  Backend:          Node.js • Express.js • Django                       │
+│  Databases:        MongoDB • PostgreSQL • Firebase                     │
+│  Tools:            Schizophrenia • Git/GitHub • Docker • VS Code       │
+│                                                                           │
+└───────────────────────────────────────────────────────────────────────────┘
 
+┌─ 📊 LIVE METRICS (Updated Daily) ────────────────────────────────────────┐
+│                                                                           │
+│  ╭─ GITHUB STATS                                                         │
+│  │  Followers:        7                                             │
+│  │  Following:        8                                             │
+│  │  Repositories:     45                                            │
+│  │  Contributions:    0                                             │
+│  ╰─ Last Updated: 2026-01-24                        │
+│                                                                           │
+│  ╭─ LEETCODE STATS                                                       │
+│  │  Total Solved:     144                                           │
+│  │  Easy:             63                                            │
+│  │  Medium:           74                                            │
+│  │  Hard:             7                                             │
+│  │  Acceptance Rate:  73.67%                                           │
+│  ╰─ Last Updated: 2026-01-24                        │
+│                                                                           │
+└───────────────────────────────────────────────────────────────────────────┘
 
+┌─ 🚀 CURRENT MISSION STATUS ─────────────────────────────────────────────┐
+│                                                                           │
+│  Status:            Online 24/7                                         │
+│  Mode:              Experimentation + Shipping                          │
+│                                                                           │
+│  Weapons Arsenal:                                                        │
+│    ⚡ MERN Stack                                                       │
+│    ⚡ Python                                                           │
+│    ⚡ NumPy                                                            │
+│    ⚡ Go                                                               │
+│    ⚡ Docker                                                           │
+│    ⚡ System Design                                                    │
+│    ⚡ Flutter                                                          │
+│    ⚡ SQL/NoSQL                                                        │
+│                                                                           │
+│  Known Weaknesses:                                                       │
+│    ⚠️  Redstones                                                        │
+│    ⚠️  Part time nihilist                                               │
+│                                                                           │
+│  Next Level:        Turning coffee into production-grade apps ☕→🚀      │
+│                                                                           │
+└───────────────────────────────────────────────────────────────────────────┘
 
+┌─ 📁 CURRENT PROJECTS ───────────────────────────────────────────────────┐
+│                                                                           │
+│  1. Blem                                                                 │
+│     Description: A landing page builder for developers                      │
+│     Tech Stack:  Next.js • Tailwind CSS • Vercel                            │
+│     Status:      In Development                                             │
+│                                                                           │
+│  2. Database Utility Tool                                                │
+│     Description: Database management and optimization tool                  │
+│     Tech Stack:  go • Docker                                                │
+│     Status:      Planning                                                   │
+│                                                                           │
+└───────────────────────────────────────────────────────────────────────────┘
 
-- 🔭 I’m currently working on [blem](https://github.com/AbirpandA/blem.git)
+┌─ 🎯 GOALS & ASPIRATIONS ────────────────────────────────────────────────┐
+│                                                                           │
+│  Short Term:                                                             │
+│    ✓ Master system design patterns                                      │
+│    ✓ Build 2 production-scale applications                              │
+│    ✓ Solve 250+ LeetCode problems                                       │
+│                                                                           │
+│  Long Term:                                                              │
+│    ★ Create scalable microservices architecture                         │
+│    ★ Build distributed systems                                          │
+│    ★ Contribute to open source                                          │
+│    ★ Lead technical projects                                            │
+│    ★ Build scalable Systems with Redstone                               │
+│                                                                           │
+└───────────────────────────────────────────────────────────────────────────┘
 
-- 🌱 I’m currently learning **Devops**
+┌─ 📞 CONNECT & COLLABORATE ──────────────────────────────────────────────┐
+│                                                                           │
+│  GitHub:           N/A                                                 │
+│  LinkedIn:         https://www.linkedin.com/in/abir-panda-5028a6335    │
+│  Twitter:          N/A                                                 │
+│  Email:            abirpanda335@gmail.com                              │
+│  Portfolio:        N/A                                                 │
+│                                                                           │
+│  Let's collaborate on building scalable systems! 🚀                      │
+│                                                                           │
+└───────────────────────────────────────────────────────────────────────────┘
 
-- 👯 I’m looking to collaborate on [dRhooks](https://github.com/AbirpandA/dRhooks.git)
-
-- 💬 Ask me about **react,next js ,ts**
-
-- 📫 How to reach me **abirpanda335@gmail.com**
-
-<h3 align="left">Connect with me:</h3>
-<p align="left">
-</p>
-
-<h3 align="left">Languages and Tools:</h3>
-<p align="left"> <a href="https://www.w3schools.com/cpp/" target="_blank" rel="noreferrer"> <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/cplusplus/cplusplus-original.svg" alt="cplusplus" width="40" height="40"/> </a> <a href="https://www.w3schools.com/css/" target="_blank" rel="noreferrer"> <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/css3/css3-original-wordmark.svg" alt="css3" width="40" height="40"/> </a> <a href="https://expressjs.com" target="_blank" rel="noreferrer"> <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/express/express-original-wordmark.svg" alt="express" width="40" height="40"/> </a> <a href="https://www.figma.com/" target="_blank" rel="noreferrer"> <img src="https://www.vectorlogo.zone/logos/figma/figma-icon.svg" alt="figma" width="40" height="40"/> </a> <a href="https://firebase.google.com/" target="_blank" rel="noreferrer"> <img src="https://www.vectorlogo.zone/logos/firebase/firebase-icon.svg" alt="firebase" width="40" height="40"/> </a> <a href="https://git-scm.com/" target="_blank" rel="noreferrer"> <img src="https://www.vectorlogo.zone/logos/git-scm/git-scm-icon.svg" alt="git" width="40" height="40"/> </a> <a href="https://www.w3.org/html/" target="_blank" rel="noreferrer"> <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/html5/html5-original-wordmark.svg" alt="html5" width="40" height="40"/> </a> <a href="https://www.java.com" target="_blank" rel="noreferrer"> <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/java/java-original.svg" alt="java" width="40" height="40"/> </a> <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript" target="_blank" rel="noreferrer"> <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/javascript/javascript-original.svg" alt="javascript" width="40" height="40"/> </a> <a href="https://jestjs.io" target="_blank" rel="noreferrer"> <img src="https://www.vectorlogo.zone/logos/jestjsio/jestjsio-icon.svg" alt="jest" width="40" height="40"/> </a> <a href="https://www.mongodb.com/" target="_blank" rel="noreferrer"> <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/mongodb/mongodb-original-wordmark.svg" alt="mongodb" width="40" height="40"/> </a> <a href="https://www.mysql.com/" target="_blank" rel="noreferrer"> <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/mysql/mysql-original-wordmark.svg" alt="mysql" width="40" height="40"/> </a> <a href="https://nodejs.org" target="_blank" rel="noreferrer"> <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/nodejs/nodejs-original-wordmark.svg" alt="nodejs" width="40" height="40"/> </a> <a href="https://www.postgresql.org" target="_blank" rel="noreferrer"> <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/postgresql/postgresql-original-wordmark.svg" alt="postgresql" width="40" height="40"/> </a> <a href="https://www.python.org" target="_blank" rel="noreferrer"> <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/python/python-original.svg" alt="python" width="40" height="40"/> </a> <a href="https://reactjs.org/" target="_blank" rel="noreferrer"> <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/react/react-original-wordmark.svg" alt="react" width="40" height="40"/> </a> <a href="https://redis.io" target="_blank" rel="noreferrer"> <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/redis/redis-original-wordmark.svg" alt="redis" width="40" height="40"/> </a> <a href="https://redux.js.org" target="_blank" rel="noreferrer"> <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/redux/redux-original.svg" alt="redux" width="40" height="40"/> </a> <a href="https://sass-lang.com" target="_blank" rel="noreferrer"> <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/sass/sass-original.svg" alt="sass" width="40" height="40"/> </a> <a href="https://tailwindcss.com/" target="_blank" rel="noreferrer"> <img src="https://www.vectorlogo.zone/logos/tailwindcss/tailwindcss-icon.svg" alt="tailwind" width="40" height="40"/> </a> <a href="https://www.typescriptlang.org/" target="_blank" rel="noreferrer"> <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/typescript/typescript-original.svg" alt="typescript" width="40" height="40"/> </a> </p>
-
-<p><img align="left" src="https://github-readme-stats.vercel.app/api/top-langs?username=abirpanda&show_icons=true&locale=en&layout=compact" alt="abirpanda" /></p>
-
-<p>&nbsp;<img align="center" src="https://github-readme-stats.vercel.app/api?username=abirpanda&show_icons=true&locale=en" alt="abirpanda" /></p>
-
-<p align="center"><img align="center" src="https://github-readme-streak-stats.herokuapp.com/?user=abirpanda&" alt="abirpanda" /></p>
-
-<div align="center"> <a href="https://github.com/ryo-ma/github-profile-trophy"><img src="https://github-profile-trophy.vercel.app/?username=abirpanda" alt="abirpanda" /></a> </div>
-
-<div align="center">
-<img height="100%" src="https://raw.githubusercontent.com/Sasuke1003/photoshub/refs/heads/main/Pixel%20Art%208Bit%20GIF%20by%20pixel%20jeff.gif" />
-</div>
+╔═══════════════════════════════════════════════════════════════════════════╗
+║  Last Updated: 2026-01-24T08:30:46.510Z                              ║
+║  Auto-updated daily via GitHub Actions • View source at /data/profile.yaml ║
+║                                                                           ║
+║  "Code today, scale tomorrow" - Abir Panda                              ║
+╚═══════════════════════════════════════════════════════════════════════════╝
