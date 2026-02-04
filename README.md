@@ -43,18 +43,18 @@
 │                                                                         │
 │  ╭─ GITHUB STATS                                                        │
 │  │  Followers:        8                                                 │
-│  │  Following:        8                                                 │
-│  │  Repositories:     45                                                │
+│  │  Following:        9                                                 │
+│  │  Repositories:     46                                                │
 │  │  Contributions:    0                                                 │
-│  ╰─ Last Updated: 2026-01-24                                            │
+│  ╰─ Last Updated: 2026-02-04                                            │
 │                                                                         │
 │  ╭─ LEETCODE STATS                                                      │
-│  │  Total Solved:     145                                               │
-│  │  Easy:             63                                                │
-│  │  Medium:           75                                                │
-│  │  Hard:             7                                                 │
-│  │  Acceptance Rate:  73.54%                                            │
-│  ╰─ Last Updated: 2026-01-24                                            │
+│  │  Total Solved:     161                                               │
+│  │  Easy:             72                                                │
+│  │  Medium:           81                                                │
+│  │  Hard:             8                                                 │
+│  │  Acceptance Rate:  72.66%                                            │
+│  ╰─ Last Updated: 2026-02-04                                            │
 │                                                                         │
 └─────────────────────────────────────────────────────────────────────────┘
 
@@ -100,7 +100,7 @@
 └─────────────────────────────────────────────────────────────────────────┘
 
 ╔═════════════════════════════════════════════════════════════════════════╗
-║  Last Updated: 2026-01-24T16:39:32.113Z                                 ║
+║  Last Updated: 2026-02-04T05:43:54.158Z                                 ║
 ║  Auto-updated daily via GitHub Actions •                                ║
 ║                                                                         ║
 ║  "Code today, scale tomorrow" - Abir Panda                              ║
