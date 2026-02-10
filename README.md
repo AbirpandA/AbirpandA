@@ -46,15 +46,15 @@
 │  │  Following:        9                                                 │
 │  │  Repositories:     46                                                │
 │  │  Contributions:    0                                                 │
-│  ╰─ Last Updated: 2026-02-09                                            │
+│  ╰─ Last Updated: 2026-02-10                                            │
 │                                                                         │
 │  ╭─ LEETCODE STATS                                                      │
 │  │  Total Solved:     166                                               │
 │  │  Easy:             74                                                │
 │  │  Medium:           84                                                │
 │  │  Hard:             8                                                 │
-│  │  Acceptance Rate:  72.70%                                            │
-│  ╰─ Last Updated: 2026-02-09                                            │
+│  │  Acceptance Rate:  72.77%                                            │
+│  ╰─ Last Updated: 2026-02-10                                            │
 │                                                                         │
 └─────────────────────────────────────────────────────────────────────────┘
 
@@ -100,7 +100,7 @@
 └─────────────────────────────────────────────────────────────────────────┘
 
 ╔═════════════════════════════════════════════════════════════════════════╗
-║  Last Updated: 2026-02-09T05:13:11.554Z                                 ║
+║  Last Updated: 2026-02-10T05:13:54.780Z                                 ║
 ║  Auto-updated daily via GitHub Actions •                                ║
 ║                                                                         ║
 ║  "Code today, scale tomorrow" - Abir Panda                              ║
