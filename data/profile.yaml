@@ -59,16 +59,16 @@ github_stats:
   public_repos: 0
   total_stars: 0
   total_contributions: 0
-  last_updated: '2026-03-29'
+  last_updated: '2026-03-30'
 leetcode_stats:
   username: abirpanda
   total_solved: 204
   easy: 81
   medium: 108
   hard: 15
-  acceptance_rate: 74.35
+  acceptance_rate: 74.4
   badge: Intermediate
-  last_updated: '2026-03-29'
+  last_updated: '2026-03-30'
 current_mission:
   status: Online 24/7
   mode: Experimentation + Shipping
