@@ -46,15 +46,15 @@
 │  │  Following:        0                                                 │
 │  │  Repositories:     0                                                 │
 │  │  Contributions:    0                                                 │
-│  ╰─ Last Updated: 2026-04-13                                            │
+│  ╰─ Last Updated: 2026-04-14                                            │
 │                                                                         │
 │  ╭─ LEETCODE STATS                                                      │
-│  │  Total Solved:     210                                               │
-│  │  Easy:             81                                                │
-│  │  Medium:           114                                               │
+│  │  Total Solved:     212                                               │
+│  │  Easy:             82                                                │
+│  │  Medium:           115                                               │
 │  │  Hard:             15                                                │
-│  │  Acceptance Rate:  74.73%                                            │
-│  ╰─ Last Updated: 2026-04-13                                            │
+│  │  Acceptance Rate:  74.42%                                            │
+│  ╰─ Last Updated: 2026-04-14                                            │
 │                                                                         │
 └─────────────────────────────────────────────────────────────────────────┘
 
@@ -100,7 +100,7 @@
 └─────────────────────────────────────────────────────────────────────────┘
 
 ╔═════════════════════════════════════════════════════════════════════════╗
-║  Last Updated: 2026-04-13T05:58:23.722Z                                 ║
+║  Last Updated: 2026-04-14T05:33:25.587Z                                 ║
 ║  Auto-updated daily via GitHub Actions •                                ║
 ║                                                                         ║
 ║  "Code today, scale tomorrow" - Abir Panda                              ║
